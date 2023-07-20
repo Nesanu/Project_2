@@ -15,32 +15,74 @@
     <body>
 
         <header>
- 
-            <img src="images/logo/logo_booki.png" alt="Le logo Booki">
-        
+            <!-- Ajouter Nav -->
+            <!-- <img class="logo-booki" src="images/logo/logo_booki.png" alt="Le logo Booki" width=61.09px height=19px/> -->
+           
+            <img class="logo-booki" src="images/logo/logo_booki.png" alt="Le logo Booki"/>
+            
+            <nav>
                 <a href="#hebergements">Hébergements</a>
-                <a href="#activités">Activités</a>
-
+                <a href="#activites">Activités</a>
+            </nav>
+             
         </header>
         
-        
+    
         <main>
+            
+            <section>
+
         
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
-    <h2> En plein centre-ville ou en pleine nature </h2>
+            <p class="soustitre-h1">En plein centre-ville ou en pleine nature</p>
 
-    <p>
+
         <form method="get" action="">
-        <p> Marseille, France </p>
-        <label for="site-search"></label>
-        <button>Rechercher </button> 
-        <input type="search" id="site-search" name="">
+            <label for="site-search"></label>
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" value="Marseille, France" id="site-search" name="site-search">
+            <button class="button"> Rechercher </button> 
         </form>
-    </p>
 
+        <!-- <form method="get" action="">
+        <label for="site-search"></label>
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="search" value="Marseille, France" id="site-search" name="">
+        <button class="button"> Rechercher </button> 
+        </form> -->
 
+            <!--  <div>
+                <i class="fa-solid fa-information-dot"></i>
+                <p>Plus de 500 ....</p>
+            </div> -->
+        <div>
+            <p class="filtres">Filtres</p>
+                <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"></i>
+                <button class="economique">Economique</button>
+        </div>
 
+        <div>
+                <i class="fa-solid fa-person" style="color: #0065fc;"></i>
+                <button class="familial">Familial</button>
+        </div>  
+
+        <div>
+            <i class="fa-solid fa-heart" style="color: #0065fc;"></i>
+            <button class="romantique">Romantique</button>
+        </div> 
+
+        <div>
+                <i class="fa-solid fa-fire" style="color: #0065fc;"></i>
+                <button class="nos-pepites">Nos pépites</button>
+        </div> 
+
+        <div> 
+            <button class="btn-info"><i class="fa-solid fa-info" style="color: #0065fc;"></i></button>
+            <p class="logements-centreville">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>              
+        
+            </section>
 
 
 

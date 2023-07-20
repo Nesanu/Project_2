@@ -5,13 +5,100 @@ h1 {
     text-align: left;
     font-family: 'Raleway', sans-serif;
 }
-h2 {
+.soustitre-h1 {
     color: black;
-    font-size: 1em;
+    font-size: 0.8em;
     font-style: normal;
+    text-align: left;
 }
 
 .logo_booki {
     text-align: left;
+    width: 61.09px;
+    height: 19px;
 }
 
+.hebergements {
+    text-align: right;
+}
+.activites {
+    text-align: right;
+}
+
+form {
+    border: 2px solid white;
+
+}
+
+.button {
+  
+    color: white;
+    text-align: center;
+    background-color: #0065fc;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+   
+}
+
+.search input {
+    text-align: center;
+
+}
+.fa-solid {
+    background-color: #f2f2f2;
+    vertical-align: middle;
+}
+
+.soustitre-h1 {
+    color: black;
+}
+ 
+
+
+.filtres {
+    font-size: medium;
+
+}
+.economique {
+    background-color: white;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    border: 2px solid #f2f2f2;
+    display: inline-block;
+}
+.btn-info {
+    background-color: white;
+    border: 2px solid #f2f2f2;
+    border-radius: 16px;
+}
+.familial {
+    background-color: white;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    border: 2px solid #f2f2f2;
+    display: inline-block;   
+}
+
+.romantique {
+    background-color: white;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    border: 2px solid #f2f2f2;
+    display: inline-block;
+}
+
+.nos-pepites {
+    background-color: white;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    border: 2px solid #f2f2f2;
+    display: inline-block;
+}
+
+.logements-centreville {
+    font-size: 0.8em;
+}
