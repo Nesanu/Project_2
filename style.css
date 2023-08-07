@@ -2,7 +2,7 @@ h1 {
     color: black;
     font-size: 1em;
     font-style: normal;
-    text-align: left;
+    position: relative;
     font-family: 'Raleway', sans-serif;
 }
 .soustitre-h1 {
@@ -12,93 +12,326 @@ h1 {
     text-align: left;
 }
 
-.logo_booki {
+.logo-booki {
     text-align: left;
     width: 61.09px;
     height: 19px;
+    margin-bottom: 20px; 
 }
 
+.liens-nav {
+    color: #0065fc;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: 14px 16px;
+    margin: 15px;
+    gap: 10px;
+    
+}
 .hebergements {
-    text-align: right;
+    padding: 10px;
+    margin: 15px;
 }
 .activites {
-    text-align: right;
-}
-
-form {
-    border: 2px solid white;
-
-}
-
-.button {
-  
-    color: white;
-    text-align: center;
-    background-color: #0065fc;
-    border-radius: 0px 10px 10px 0px;
     padding: 10px;
-   
+    margin: 15px;
 }
 
-.search input {
-    text-align: center;
+.container-search {
+    display: flex;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px 10px 10px 10px;
+    flex-direction: row;
+    padding: 0;
+    height: auto;
+    width: fit-content;
+    margin-top: 20px; 
+}
+form {
+    border: 2px solid #f2f2f2;
+    border: none;
+    padding: 0;
+    object-fit: cover;
+}
+
+.btn-location {
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding: 7px;
 
 }
 .fa-solid {
-    background-color: #f2f2f2;
-    vertical-align: middle;
+    color: #0065fc;
+}
+
+.button-search {
+    color:white;
+    border: none;
+    text-align: center;
+    background-color: #0065fc;
+    border-radius: 0px 10px 10px 0px;
+    padding: 7px;
+}
+
+input {
+    font-size: small;
+    padding: 7px;
+    border: none;
+    text-align: center;
+    background-color: white;
+    align-content: center;
+    font-weight: bold;
+    vertical-align: top;
+    margin: 0;
 }
 
 .soustitre-h1 {
     color: black;
 }
  
-
-
-.filtres {
-    font-size: medium;
-
+.container-filtres {
+    font-size: small;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: auto;
+    justify-content: space-between;
+    gap: 20px; 
+    margin-top: 20px; 
 }
-.economique {
+.text-filtres {
+    font-size: medium;
+    display: inline-flex;
+    font-weight: 600; 
+}
+
+.btn-filtres {
+    font-size: small;
     background-color: white;
     text-align: center;
+    border: 2px solid #f2f2f2;
     border-radius: 15px 15px 15px 15px;
     padding: 10px;
-    border: 2px solid #f2f2f2;
-    display: inline-block;
+    font-weight: 700;
+    margin: 7px;
+}
+
+.btn-filtres:hover {
+    background-color: #deebff;
+}
+
+.container-info {
+    display: inline-flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 5px;
 }
 .btn-info {
     background-color: white;
     border: 2px solid #f2f2f2;
-    border-radius: 16px;
+    border-radius: 50%; 
+    height: fit-content;
+    margin: 5px;
+    display: flex;
 }
-.familial {
-    background-color: white;
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-    padding: 10px;
-    border: 2px solid #f2f2f2;
-    display: inline-block;   
-}
-
-.romantique {
-    background-color: white;
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-    padding: 10px;
-    border: 2px solid #f2f2f2;
-    display: inline-block;
-}
-
-.nos-pepites {
-    background-color: white;
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-    padding: 10px;
-    border: 2px solid #f2f2f2;
-    display: inline-block;
-}
-
 .logements-centreville {
-    font-size: 0.8em;
+    font-size: 0.7em;
+    display: flex;
 }
+
+h2 {
+    color: black;
+    font-size: 1em;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-main_cards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.title-populaires {
+    color: black;
+    font-size: 1em;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.title-populaires-icon {
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+      
+
+}
+.container-populaires_cards {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 600px;
+    width: 30%;
+    border-radius: 15px 15px 15px 15px;
+    gap: 20px;
+    padding: 20px 20px 20px 20px;
+    
+}
+  .card-populaires {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-content: space-between;
+    background: white;
+    padding: 3px;
+    gap: 10px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-image_populaires {
+    display: inline-flex;
+    width: 33.33%;
+    height: 145px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+
+  }
+
+  .card_stars-populaires {
+    color: #0065fc;
+    align-items: start;
+    padding-top: 2rem;      
+  }
+  
+  .card_star--inactive {
+    color: #f2f2f2;
+    align-items: end;
+    display: inline; 
+
+  }
+  .card-caption_populaire {
+    font-size: small;
+    display: inline;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .container-hebergements_cards {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    height: 600px;
+    width: 70%;
+    border-radius: 15px 15px 15px 15px;
+    gap: 15px;
+    padding: 15px 15px 15px 15px;
+    
+  }
+  
+.title-hebergements {
+    color: black;
+    font-size: 1em;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 70%;
+    border: none;
+    
+}
+.card-hebergements {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 31.5%;
+    height: 210px;
+    border-radius: 15px;
+    display: inline;
+    align-items: flex-start;
+    background: white;
+    padding: 3px;
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-image_hebergements {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    height: 120px;
+    object-fit: cover;
+    
+  }
+
+  .card-desc_hebergement {
+    display: inline;
+    text-align: start;
+    font-size: small;    
+    font-weight: 400;
+    line-height: 80%;
+            
+  }
+  .affichez-plus {
+    font-weight: 600;
+    font-size: small;
+    display: inline;
+    text-align: left;
+    align-self: flex-start;
+
+  }
+
+.container-activites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ .gallery {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.3);
+  }
+  
+  .gallery:hover {
+    border: 1px solid #deebff;
+    border-radius: 16px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.3);
+  }
+  
+.description {
+    font-size: small;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+  }
+  
