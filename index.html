@@ -16,25 +16,27 @@
 
     <body>
 
-        <header>
+        <div class="main-container">
+
+            <header>
             <!-- Ajouter Nav -->
             <!-- <img class="logo-booki" src="images/logo/logo_booki.png" alt="Le logo Booki"/> -->
         
             <nav>
                 <div class="liens-nav">
-                    <a href="#hebergements">Hébergements</a>
+                    <a href="#hebergements"><span>Hébergements</span></a> 
                     <a href="#activites">Activités</a>
                 </div>
             </nav>
 
-            <img class="logo-booki" src="images/logo/logo_booki.png" alt="Le logo Booki"/>
+            <img class="logo" src="images/logo/logo_booki.png" alt="Le logo Booki"/>
 
-        </header>    
+            </header>    
 
     
-    <main>
+        <main>
             
-        <section>
+            <section>
         
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
@@ -45,8 +47,10 @@
                     <label for="site-search"></label>
                     <button class="btn-location"><i class="fa-solid fa-location-dot"></i></button> 
                     <input type="site-search" value="Marseille, France" id="site-search" name="site-search">
-                    <button class="button-search"> Rechercher </button> 
-                </form>
+                    <button class="button-search"><p class="rechercher">Rechercher</p></button>
+                    <button class="button-magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></button>
+                     
+                <form>
             </div>
     
             <div class="container-filtres">
@@ -65,75 +69,16 @@
             </section>
 
 
-    <section class="hebergements-et-populaires">
-     <div class="container-main_cards">
-
-            <div class="container-populaires_cards">
-
-                <div class="title-populaires">
-                <h2>Les plus populaires</h2>
-                <i class="title-populaires-icon fa-solid fa-chart-line"></i>            
-                </div>   
-                    <a href="#">
-                    <article class="card-populaires">
-                        <img class="card-image_populaires" src="images/hebergements/emile-guillemot.jpg" alt="Auberge la Canebière"/>
-                            <div class="card-caption_populaire">
-                            <h3>Auberge la Canebière</h3>
-                            <p>Nuit à partir de 25€</p>  
-                                <div class="card_star-populaire">                                    
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star-inactive fa-solid fa-star"></i>
-                                </div>     
-                            </div>  
-                    </article>
-                    </a>
-                    <a href="#">
-                    <article class="card-populaires">
-                        <img class="card-image_populaires" src="images/hebergements/aw-creative.jpg" alt="Chambres d'hôtes au coeur de l'eau"/>
-                            <div class="card-caption_populaire">
-                            <h3>Chambres d'hôtes au coeur de l'eau</h3>
-                            <p>Nuit à partir de 71€</p>  
-                                <div class="card_star-populaire">                                    
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star-inactive fa-solid fa-star"></i>
-                                </div>  
-                             </div>  
-                    </article>
-                    </a>
-                    <a href="#">
-                    <article class="card-populaires">
-                        <img class="card-image_populaires" src="images/hebergements/febrian-zakaria2.jpg" alt="Hôtel Bleu et Blanc"/>
-                            <div class="card-caption_populaire">
-                            <h3>Hôtel Bleu et Blanc</h3>
-                            <p>Nuit à partir de 68€</p>  
-                                <div class="card_star-populaire">                                    
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star fa-solid fa-star"></i>
-                                    <i class="card_star-inactive fa-solid fa-star"></i>
-                                </div>  
-                            </div>  
-                    </article>
-                    </a>
-            </div>
-               
+            <section class="hebergements-et-populaires">
+        
+            <div class="container-hebergements-et-populaires-cards"> 
                 
-            <div class="container-hebergements_cards">
+                <div class="container-hebergements_title">
+                    <h2>Hébergements à Marseille</h2>    
 
-                    <h2 class="title-hebergements">Hébergements à Marseille</h2>    
+                    <div class="container-hebergements_cards"> 
 
-            <!--h2 class="title-hebergements">Hébergements à Marseille</h2>
-                <div class="container-title-hebergements"-->
-            <!--h2 id="title-hebergements">Hébergements à Marseille</h2-->
-                  
-                  <div class="card-hebergements">
+                        <div class="card-hebergements">
                         <a href="#"> 
                         <img class="card-image_hebergements" src="images/hebergements/fred-kleber.jpg" alt="Hôtel du Port"/>
                             <div class="card-desc_hebergement">
@@ -148,9 +93,9 @@
                                 </div>     
                             </div>  
                         </a>
-                    </div> 
+                        </div> 
                    
-                    <div class="card-hebergements">
+                        <div class="card-hebergements">
                         <a href="#"> 
                         <img class="card-image_hebergements" src="images/hebergements/febrian-zakaria.jpg" alt="Hôtel chez Amina"/>
                             <div class="card-desc_hebergement">
@@ -165,9 +110,9 @@
                                 </div>  
                             </div>  
                         </a>
-                    </div>
+                        </div>
 
-                    <div class="card-hebergements">
+                        <div class="card-hebergements">
                         <a href="#"> 
                         <img class="card-image_hebergements" src="images/hebergements/reisetopia.jpg" alt="Hôtel Les Mouettes">
                             <div class="card-desc_hebergement">
@@ -182,9 +127,9 @@
                                 </div>  
                            </div>
                         </a>
-                     </div>
+                        </div>
                     
-                     <div class="card-hebergements">
+                        <div class="card-hebergements">
                         <a href="#"> 
                         <img class="card-image_hebergements" src="images/hebergements/annie-spratt.jpg" alt="Hôtel de la mer">
                             <div class="card-desc_hebergement">
@@ -199,9 +144,9 @@
                                 </div>  
                            </div>
                         </a>
-                     </div>
+                        </div>
 
-                     <div class="card-hebergements">
+                        <div class="card-hebergements">
                         <a href="#"> 
                         <img class="card-image_hebergements" src="images/hebergements/marcus-loke.jpg" alt="Auberge La Canebière">
                             <div class="card-desc_hebergement">
@@ -216,9 +161,9 @@
                                 </div>  
                            </div>
                         </a>
-                     </div>
+                        </div>
 
-                     <div class="card-hebergements">
+                        <div class="card-hebergements">
                         <a href="#"> 
                         <img class="card-image_hebergements" src="images/hebergements/nicate-lee.jpg" alt="Auberge Le Panier">
                             <div class="card-desc_hebergement">
@@ -233,31 +178,78 @@
                                 </div>  
                            </div>
                         </a>
-                     </div>
-                    <p class="affichez-plus">Affichez plus</p> 
-            </div>
-    </div>
-
-        </section>
-
-            <!--section class="activites"
-                
-                Devrais-je créer des images card comme pour la section 
-                'Hebergements' ou galerie d'images ou je peux laisser la gallery en l'état?>
-
-                <h2> Activités à Marseille </h2>
-                <div class="img-card"></div>
-                <div class="card-content"></div>
-                    <img src="images/activites/florian-wehde.jpg" alt="Vieux Port"/>
+                        </div>
+                        <p class="affichez-plus">Affichez plus</p> 
+                    </div>
                 </div>
-            </section-->
+    
+
+                <div class="container-populaires_cards">
+
+                    <div class="title-populaires">
+                    <h2>Les plus populaires<i class="title-populaires-icon fa-solid fa-chart-line"></i></h2>
+                    </div> 
+                        <a href="#">
+                        <article class="card-populaires">
+                        <img class="card-image_populaires" src="images/hebergements/emile-guillemot.jpg" alt="Auberge la Canebière"/>
+                        <div class="card-caption_populaire">
+                        <h3>Auberge la Canebière</h3>
+                        <p>Nuit à partir de 25€</p>  
+                            <div class="card_star-populaire">                                    
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star-inactive fa-solid fa-star"></i>
+                            </div>     
+                        </div>  
+                        </article>
+                        </a>
+                        <a href="#">
+                        <article class="card-populaires">
+                        <img class="card-image_populaires" src="images/hebergements/aw-creative.jpg" alt="Chambres d'hôtes au coeur de l'eau"/>
+                        <div class="card-caption_populaire">
+                        <h3>Chambres d'hôtes au coeur de l'eau</h3>
+                        <p>Nuit à partir de 71€</p>  
+                            <div class="card_star-populaire">                                    
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star-inactive fa-solid fa-star"></i>
+                            </div>  
+                         </div>  
+                        </article>
+                        </a>
+                        <a href="#">
+                        <article class="card-populaires">
+                        <img class="card-image_populaires" src="images/hebergements/febrian-zakaria2.jpg" alt="Hôtel Bleu et Blanc"/>
+                            <div class="card-caption_populaire">
+                            <h3>Hôtel Bleu et Blanc</h3>
+                            <p>Nuit à partir de 68€</p>  
+                            <div class="card_star-populaire">                                    
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star fa-solid fa-star"></i>
+                                <i class="card_star-inactive fa-solid fa-star"></i>
+                            </div>  
+                            </div>  
+                        </article>
+                        </a>
+                      
+                </div> 
+            
+            </div> 
+                
+            </section>
            
    
-    <section class="activites">
+            <section class="activites">
 
-        <h2 id="activites">Activités à Marseille</h2>
+            <h2 class="title-activites">Activités à Marseille</h2>
                                 
-        <div class="container-activites">
+            <div class="container-activites">
 
                 <div class="gallery">
                     <a href="#"> 
@@ -283,12 +275,12 @@
                         <div class="description">Notre-Dame-de-la-Garde</div>
                     </a>
                 </div>
-        </div>
-        </section> 
+            </div>
+            </section> 
 
-    </main>
+        </main>
 
-        <footer>
+            <footer>
             <footer class="container-main_footer">
 
                 <div class="footer">
@@ -316,7 +308,8 @@
                     </ul>
                 </div>
 
+                </footer>
             </footer>
-        </footer>
+        </div>
     </body>
 </html>

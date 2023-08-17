@@ -1,3 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 h1 {
     color: black;
     font-size: 1em;
@@ -12,11 +24,11 @@ h1 {
     text-align: left;
 }
 
-.logo-booki {
-    text-align: left;
+.logo {
+    display: flex;
     width: 61.09px;
     height: 19px;
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
 }
 
 .liens-nav {
@@ -27,28 +39,24 @@ h1 {
     padding: 14px 16px;
     margin: 15px;
     gap: 10px;
-    
-}
-.hebergements {
-    padding: 10px;
-    margin: 15px;
 }
 
-.activites {
-    padding: 10px;
-    margin: 15px;
+span {
+    color: #0065fc;
+    text-decoration: underline;
 }
-
+ 
 .container-search {
     display: flex;
     border: 2px solid #f2f2f2;
     border-radius: 10px 10px 10px 10px;
     flex-direction: row;
     padding: 0;
-    height: auto;
     width: fit-content;
+    height: min-content;
     margin-top: 20px; 
 }
+
 form {
     border: 2px solid #f2f2f2;
     border: none;
@@ -59,12 +67,16 @@ form {
 .btn-location {
     border: none;
     border-radius: 10px 0px 0px 10px;
-    padding: 7px;
+    padding: 9px;
+    height: fit-content;
+    width: auto;
 
 }
 .fa-location-dot {
     color:black;
+    padding: 5px;
 }
+
 
 .button-search {
     color:white;
@@ -72,20 +84,41 @@ form {
     text-align: center;
     background-color: #0065fc;
     border-radius: 0px 10px 10px 0px;
-    padding: 7px;
+    padding: 1px 7px 0px 7px;  
+    width: auto;
+    height: fit-content;
+   
+}
+.rechercher {
+    width: auto;
+    height: fit-content;
+}
+
+.button-magnifying-glass {
+    color:white;
+    border: none;
+    text-align: center;
+    background-color: #0065fc;
+    height: max-content;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 13px;  
+    display: none;
+ 
 }
 
 input {
     font-size: small;
-    padding: 7px;
     border: none;
     text-align: center;
     background-color: white;
-    align-content: center;
     font-weight: bold;
-    vertical-align: top;
+    vertical-align: center;
+    padding: none;
     margin: 0;
+    height: fit-content;
 }
+
 
 .soustitre-h1 {
     color: black;
@@ -141,6 +174,7 @@ input {
     padding: 5px;
 }
 .btn-info {
+    color: #0065fc;
     background-color: white;
     border: 2px solid #f2f2f2;
     border-radius: 50%; 
@@ -158,67 +192,69 @@ h2 {
     font-size: 1em;
     font-style: normal;
     font-family: 'Raleway', sans-serif;
-}
-
-.container-main_cards {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 20px;  
-}
-
-.title-populaires {
-    color: black;
-    font-size: 1em;
-    font-style: normal;
-    font-family: 'Raleway', sans-serif;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: start;
     
 }
 
-.title-populaires-icon {
+.container-hebergements-et-populaires-cards {
     display: flex;
-    display: block;
     flex-direction: row;
-    position: relative;
-    top: 15px;
-    left: 130px;
+    gap: 20px;
+    height: 600px;
+    border-radius: 15px 15px 15px 15px;
+
 }
+
+.title-populaires {
+    display: inline-block;
+    flex-wrap: nowrap;
+    width: 90%;
+    border: none;
+    padding: 0px 0px 0px 20px;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    background-color: beige;
+    
+}
+
+.fa-chart-line {
+    display: inline;
+    color: #0065fc;
+    margin-left: 170px;
+
+}
+
 .container-populaires_cards {
-    background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: #f2f2f2;
     height: 600px;
     width: 30%;
-    border-radius: 15px 15px 15px 15px;
     gap: 20px;
-    padding: 20px 20px 20px 20px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
 }
 
+
 .card-populaires {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 90%;
-    height: 150px;
-    border-radius: 15px;
     display: flex;
-    align-content: space-between;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 80%;
+    height: 145px;
+    border-radius: 15px;
     background: white;
     padding: 3px;
-    gap: 10px;
-    line-height: 70%;
-  }
+    line-height: 60%;
+}
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
 
 a {
     color: black;
     text-decoration: none;
-    
 }
   
 .card-image_populaires {
@@ -227,60 +263,58 @@ a {
     height: 145px;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
+    gap: 3px;
+}
 
-  }
 
 .card_star-populaire {
     color: #0065fc;
     display: inline-block;
     margin: 50px 0 5px 0;
     
-    
-  }
+}
   
 .card_star-inactive {
     color: #f2f2f2;
     align-items: end;
     display: inline-block; 
-   
+ 
+}
 
-  }
 .card-caption_populaire {
     font-size: small;
     display: inline;
     font-weight: 400;
     text-align: left;
+    padding: 5px;
     
-  }
+}
+
+.container-hebergements_title {
+    background-color: #f2f2f2;
+    width: 70%;
+    height: 600px; 
+    border-radius: 15px 15px 15px 15px;
+    padding: 15px 0px 10px 20px;
+    
+   
+} 
 
 .container-hebergements_cards {
     display: flex;
     flex-direction: row;  
     flex-wrap: wrap;
-    background-color: #f2f2f2;
-    height: 600px;
-    width: 70%;
+    gap: 20px;
     border-radius: 15px 15px 15px 15px;
-    gap: 15px;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 20px 10px 0px;
+    background-color: #f2f2f2;
     
-  }
+}       
   
-.title-hebergements {
-    color: black;
-    font-size: 1em;
-    font-style: normal;
-    font-family: 'Raleway', sans-serif;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    width: 70%;
-    border: none;
-    
-}
 .card-hebergements {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 31.5%;
-    height: 210px;
+    width: 30%;
+    height: 207px;
     border-radius: 15px;
     display: inline;
     align-items: flex-start;
@@ -291,13 +325,12 @@ a {
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
 
 .card_star-hebergement {
     color: #0065fc;
     display: inline-block;
     align-items: bottom;
-   
     margin-left: 3px;
     
 }
@@ -322,16 +355,19 @@ a {
 .affichez-plus {
     font-weight: 600;
     font-size: small;
-    display: inline;
     text-align: left;
-    align-self: flex-start;
 
   }
+
+.title-activites {
+    padding: 30px 0px 0px 15px;
+} 
 
 .container-activites {
     display: flex;
     flex-direction: row;
-    padding-top: 15px;
+    flex-wrap: wrap;
+    padding-top: 20px;
     width: 100%;
     gap: 20px;
 }
@@ -339,10 +375,10 @@ a {
 .gallery {
     border: none;
     border-radius: 16px;
-    width: 25%;
+    width: 22%;
     box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.3);
   }
-  
+
 .gallery:hover {
     border: 1px solid #deebff;
     border-radius: 16px;
@@ -363,38 +399,299 @@ a {
     font-weight: 600;
   }
   
-* {
-    box-sizing: border-box;
-  }
-
 .container-main_footer {
     display: flex;
     flex-direction: row;
     background-color:#f2f2f2;
     justify-content: start;
     width: 100%;
+    margin-top: 25px;
 }
   
-  .footer {
-    position: sticky;
+.footer {
     font-size: small;
-    left: 20px;
+    padding-left: 20px;
     font-weight: 400;
-    bottom: 0px;
     width: 33.33%;
     padding-bottom: 10px;
     background-color:#f2f2f2;
     
      }
 
-  ul.no-bullets {
+ul.no-bullets {
     list-style-type: none; 
     padding: 0; 
     margin: 0; 
   }
 
-  h4 {
+h4 {
     padding-top: 10px; 
     margin: 0;
 
   }
+
+
+
+  
+  /* tablette------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+
+
+ 
+    .text-filtres {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+
+    .container-hebergements-et-populaires-cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: none;
+        height: fit-content;
+        border-radius: 15px 15px 15px 15px;
+        gap: 20px;
+    }      
+    
+    .container-hebergements_title {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .title-populaires{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        width: 80%;
+        border: none;
+        
+    }
+
+    .container-populaires_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 15px;
+        height: fit-content;
+    }
+
+        
+    .card-populaires {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 135px;
+        padding: 3px;
+        border-radius: 15px;
+        line-height: 60%;
+        gap: 5px;
+    }
+    
+    .card-image_populaires {
+        object-fit: cover; 
+        gap: 3px;     
+    }
+
+    .card-caption_populaire {
+        display: inline-block;
+        flex-wrap: wrap;
+        
+    }
+   
+    .container-activites {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;    
+    }    
+        
+    .gallery img {
+        width: 100%;
+        height: 80%;
+
+      }
+
+      
+
+
+
+}
+       
+
+  /* mobile--------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+
+
+
+    .liens-nav {
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+     
+     } 
+     
+     .btn-location {
+        padding: 8px;
+        height: fit-content;
+        width: auto;
+    
+    }
+     .button-search {
+        display: none;   
+    }
+  
+    .button-magnifying-glass {
+        display: inline-block;
+        height: fit-content;
+        width: auto;
+        border-radius: 8px;
+        padding: 12px;  
+  
+    }
+
+    .text-filtres {
+        font-size: medium;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .container-hebergements-et-populaires-cards {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column-reverse;
+        background-color: beige;
+        width: 80%;
+        height: fit-content;
+        gap: 20px;
+ 
+    }
+    .title-populaires {
+        padding: 5px 0px 0 10px;
+        height: min-content;
+        width: 90%;
+        gap: 20px;
+        
+    }
+
+    .container-populaires_cards {
+        height: min-content;
+        width: 80%;  
+        gap: 20px;  
+
+    }
+
+    .card-populaires {
+        display: flex;
+        flex-direction: row;
+        width: 90%; 
+        height: fit-content;
+        gap: 5px;
+    }
+
+    .card-image_populaires {
+        width: 33.33%;
+        object-fit: cover;
+    
+    }
+
+    .container-hebergements_title {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        object-fit: cover;
+        width: 80%;
+    }
+
+    .card-caption_populaire {
+        display: inline-block;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+    
+  
+    .container-hebergements_cards {
+        gap: 15px;
+        background-color: white;
+        padding-right: 35px;
+        
+    }  
+    .card-hebergements {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    
+    }
+
+    .card-image_hebergements {
+        object-fit: cover;
+        height: 100px;
+        width: 100%;
+
+    }
+        
+        
+    .container-activites {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 60%;
+        height: fit-content;
+        padding-left: 20px;
+
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        
+    }
+
+    .gallery img {
+        object-fit: cover;
+        height: 100px;
+    
+    }
+
+    .description {
+        height: min-content;
+
+    }
+    
+    
+    .container-main_footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 60%; 
+
+    }
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;  
+        height: min-content;
+    }
+
+
+
+
+
+
+}
