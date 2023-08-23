@@ -19,24 +19,26 @@
         <div class="main-container">
 
             <header>
-            <!-- Ajouter Nav -->
-            <!-- <img class="logo-booki" src="images/logo/logo_booki.png" alt="Le logo Booki"/> -->
-        
+            
+            <div class="container-logo">
+            <a href="images/logo/logo_booki_3x.png"> <img class="logo_booki_3x" src="images/logo/logo_booki.png" alt="Le logo Booki grand"></a>   
+            </div>
+
             <nav>
-                <div class="liens-nav">
-                    <a href="#hebergements"><span>Hébergements</span></a> 
-                    <a href="#activites">Activités</a>
-                </div>
+                <nav class="liens-nav">
+                    <button class="nav-btn-hebergement"><a href="#title-hebergements" title="hebergements">Hébergement</a></button>
+                    <button class="nav-btn-activites"><a href="#title-activites">Activités</a></button>
+                </nav>
             </nav>
 
-            <img class="logo" src="images/logo/logo_booki.png" alt="Le logo Booki"/>
-
+                <img class="logo" src="images/logo/logo_booki.png" alt="Le logo Booki"/>
+           
             </header>    
 
     
         <main>
             
-            <section>
+            <section class="recherche-filtres">
         
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
@@ -74,7 +76,7 @@
             <div class="container-hebergements-et-populaires-cards"> 
                 
                 <div class="container-hebergements_title">
-                    <h2>Hébergements à Marseille</h2>    
+                    <h2 id="title-hebergements">Hébergements à Marseille</h2>    
 
                     <div class="container-hebergements_cards"> 
 
@@ -182,13 +184,15 @@
                         <p class="affichez-plus">Affichez plus</p> 
                     </div>
                 </div>
-    
 
                 <div class="container-populaires_cards">
 
                     <div class="title-populaires">
-                    <h2>Les plus populaires<i class="title-populaires-icon fa-solid fa-chart-line"></i></h2>
+                    <h2>Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line"></i>
                     </div> 
+
+                    <div class="cards-plus-populaires">
                         <a href="#">
                         <article class="card-populaires">
                         <img class="card-image_populaires" src="images/hebergements/emile-guillemot.jpg" alt="Auberge la Canebière"/>
@@ -237,7 +241,7 @@
                             </div>  
                         </article>
                         </a>
-                      
+                    </div>
                 </div> 
             
             </div> 
@@ -247,7 +251,7 @@
    
             <section class="activites">
 
-            <h2 class="title-activites">Activités à Marseille</h2>
+            <h2 id="title-activites"><title class="activites-title">Activités à Marseille</title></h2>
                                 
             <div class="container-activites">
 
