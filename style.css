@@ -46,7 +46,6 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .logo {
@@ -104,6 +103,7 @@ a[title*="activites"]:active {
     border-radius: 10px 10px 10px 10px;
     padding: 0;
     margin-top: 20px;
+    margin-bottom: 20px;
     object-fit: cover;
 }
 
@@ -162,11 +162,6 @@ input {
 
 .soustitre-h1 {
     color: black;
-
-}
-
-.container-grid-filtres {
-    display: none;
 }
 
 .container-filtres {
@@ -176,19 +171,18 @@ input {
     cursor: auto;
     justify-content: space-between;
     gap: 20px;
-    margin-top: 20px;
-
 }
 
 .text-filtres {
+    font-size: medium;
     display: inline-flex;
     flex-direction: row;
-    font-size: medium;
+    flex-wrap: nowrap;
+    padding-right: 10px;
     font-weight: 600;
-
 }
 
-.text-filtres-grid {
+.text-filtres-responsive {
     display: none;
 }
 
@@ -201,8 +195,48 @@ input {
     padding: 10px;
     font-weight: 700;
     margin: 7px;
-
 }
+
+
+
+
+/*.container-filtres {
+    font-size: small;
+    flex-wrap: wrap;
+    cursor: auto;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.text-filtres {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.btn-filtres {
+    font-size: small;
+    background-color: white;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    font-weight: 700;
+    margin: 7px;
+}
+
+/*.text-filtres {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: medium;
+    font-weight: 600;
+
+}*/
+
+
 
 .fa-money-bill-wave {
     color: #0065fc;
@@ -369,7 +403,7 @@ h3 {
 
 .title-hebergements {
     padding-right: 20px;
-    color: red;
+    font-size: larger;
 
 }
 
@@ -448,6 +482,7 @@ h3 {
 }
 
 .gallery {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 2px solid #f2f2f2;
     border-radius: 16px;
     width: 23%;
@@ -507,15 +542,19 @@ h4 {
         min-width: 33%;
     }
 
-    .container-grid-filtres {
-        display: none;
-    }
-
     .text-filtres {
-        display: flex;
-        flex-wrap: wrap;
+        display: none;
+
     }
 
+    .text-filtres-responsive {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: medium;
+        font-weight: 600;
+        padding-right: none;
+    }
 
     .container-search {
         display: inline-block;
@@ -666,7 +705,6 @@ h4 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: auto;
         justify-content: center;
     }
 
@@ -681,47 +719,49 @@ h4 {
 
     .button-magnifying-glass {
         display: inline-flex;
-        border-radius: 8px;
-        padding: 12px;
-    }
-
-    .btn-filtres {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
+        border-radius: 7px;
         height: auto;
-        gap: 7px;
+        color: white;
+        border: none;
+        text-align: center;
+        background-color: #0065fc;
     }
 
     input {
         display: inline-block;
         padding: none;
+        width: auto;
     }
 
-    /*.box {
-        height: 150px;
-    }*/
 
-    .container-grid-filtres {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 50px 50px;
-        gap: 10px;
+    .text-filtres {
+        display: none;
 
+    }
+
+    .text-filtres-responsive {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: medium;
+        font-weight: 600;
+        padding-right: 0;
     }
 
     .container-filtres {
-        display: none;
-    }
-
-
-    .text-filtres-grid {
         display: flex;
-        justify-content: flex-start;
-        font-size: 1em;
-        font-weight: 600;
-        padding-left: none;
+        min-width: 200px;
+        flex-wrap: wrap;
     }
+
+    .btn-filtres {
+        display: flex;
+        justify-content: flex;
+        width: 40%;
+        height: auto;
+        gap: 20px;
+    }
+
 
     .container-hebergements-et-populaires-cards {
         display: flex;
@@ -782,7 +822,7 @@ h4 {
     }
 
     .container-hebergements_title {
-        background-color: yellow;
+        background-color: white;
         display: flex;
         flex-wrap: wrap;
         height: 80%;
@@ -796,7 +836,7 @@ h4 {
     .container-hebergements_cards {
         display: flex;
         justify-content: flex-start;
-        background-color: rosybrown;
+        background-color: white;
         padding-right: 10px;
         height: 80%;
         width: auto;
