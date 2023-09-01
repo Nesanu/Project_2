@@ -533,6 +533,23 @@ h4 {
         padding: 10px 0 10px 25px;
     }
 
+
+    .title-populaires {
+        display: flex;
+        width: auto;
+        padding: 0 0 0 15px;
+        margin-top: 10px;
+    }
+
+    .fa-chart-line {
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 15px;
+        gap: unset;
+        flex-wrap: nowrap;
+        color: #0065fc;
+    }
+
     .container-populaires_cards {
         display: flex;
         flex-wrap: nowrap;
@@ -550,7 +567,7 @@ h4 {
         background-color: #f2f2f2;
         width: auto;
         gap: 15px;
-        padding: 10px;
+        padding: 0 15px 20px 15px;
     }
 
 
