@@ -168,12 +168,12 @@ input {
 }
 
 .text-filtres {
-    font-size: medium;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
     padding-right: 10px;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.1em;
 }
 
 .text-filtres-responsive {
@@ -187,29 +187,9 @@ input {
     border: 2px solid #f2f2f2;
     border-radius: 15px 15px 15px 15px;
     padding: 10px;
-    font-weight: 700;
-    margin: 7px;
-}
-
-.text-filtres {
-    display: inline-block;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    font-size: medium;
     font-weight: 600;
-}
-
-.btn-filtres {
-    font-size: small;
-    background-color: white;
-    text-align: center;
-    border: 2px solid #f2f2f2;
-    border-radius: 15px 15px 15px 15px;
-    padding: 10px;
-    font-weight: 700;
     margin: 7px;
 }
-
 
 .fa-money-bill-wave {
     color: #0065fc;
@@ -310,7 +290,7 @@ h2 {
 .cards-plus-populaires {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #f2f2f2;
     width: 100%;
     gap: 20px;
@@ -319,9 +299,11 @@ h2 {
 .card-populaires {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: auto;
+    height: 145px;
     border-radius: 20px;
     background: white;
     padding: 3px;
@@ -373,7 +355,7 @@ h3 {
 }
 
 .title-hebergements {
-    padding-right: 20px;
+    padding-right: 25px;
     font-size: larger;
 
 }
@@ -393,7 +375,8 @@ h3 {
     gap: 20px;
     border-radius: 15px 15px 15px 15px;
     background-color: #f2f2f2;
-    padding: 5px;
+    padding: 15px 10px 15px 0px;
+
 }
 
 .card-hebergements {
@@ -510,7 +493,7 @@ h4 {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     a {
-        min-width: 33%;
+        width: 32%;
     }
 
     .text-filtres {
@@ -542,11 +525,12 @@ h4 {
     }
 
     .container-hebergements_title {
-        background-color: #f2f2f2;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #f2f2f2;
         width: auto;
-        padding: 10px 0 10px 10px;
+        padding: 10px 0 10px 25px;
     }
 
     .container-populaires_cards {
@@ -555,7 +539,7 @@ h4 {
         background-color: #f2f2f2;
         width: auto;
         height: 250px;
-        padding: 10px;
+        padding: none;
 
     }
 
@@ -565,7 +549,7 @@ h4 {
         justify-content: space-evenly;
         background-color: #f2f2f2;
         width: auto;
-        gap: 10px;
+        gap: 15px;
         padding: 10px;
     }
 
@@ -625,7 +609,6 @@ h4 {
     .logo {
         display: none;
     }
-
 
     .logo_booki_3x {
         display: flex;
@@ -708,15 +691,16 @@ h4 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        font-size: medium;
+        padding-right: unset;
         font-weight: 600;
-        padding-right: 0;
+        font-size: 1em;
     }
 
     .container-filtres {
         display: flex;
-        min-width: 200px;
         flex-wrap: wrap;
+        min-width: 200px;
+
     }
 
     .btn-filtres {
