@@ -26,17 +26,14 @@
 
             <nav>
                 <nav class="liens-nav">
-                    <button class="nav-btn-hebergement"><a href="#title-hebergements"
-                            title="hebergements">Hébergement</a></button>
-                    <button class="nav-btn-activites"><a href="#title-activites"
-                            title="activites">Activités</a></button>
+                    <a href="#title-hebergements" title="hebergements">Hébergement</a>
+                    <a href="#title-activites" title="activites">Activités</a>
                 </nav>
             </nav>
 
-            <img class="logo" src="images/logo/logo_booki.png" alt="Le logo Booki" />
+            <img class="logo" src="images/logo/logo_booki.png" alt="Le logo Booki">
 
         </header>
-
 
         <main>
 
@@ -48,15 +45,14 @@
 
                 <div class="flex-row-center">
                     <div class="container-search">
-                        <form method="get" action="">
+                        <form method="get" action="/">
                             <label for="site-search"></label>
                             <button class="btn-location"><i class="fa-solid fa-location-dot"></i></button>
-                            <input type="site-search" value="Marseille, France" id="site-search" name="site-search">
-                            <button class="button-search">
-                                <p class="rechercher">Rechercher</p>
-                            </button>
+                            <input type="search" value="Marseille, France" id="site-search" name="site-search">
+                            <button class="button-search">Rechercher</button>
                             <button class="button-magnifying-glass"><i
                                     class="fa-solid fa-magnifying-glass"></i></button>
+
                         </form>
                     </div>
                 </div>
@@ -209,7 +205,7 @@
                         </div>
 
                         <div class="cards-plus-populaires">
-                            <a href="#">
+                            <a href="#" title="lien-populaire">
                                 <article class="card-populaires">
                                     <img class="card-image_populaires" src="images/hebergements/emile-guillemot.jpg"
                                         alt="Hôtel Le soleil du matin" />
@@ -226,7 +222,7 @@
                                     </div>
                                 </article>
                             </a>
-                            <a href="#">
+                            <a href="#" title="lien-populaire">
                                 <article class="card-populaires">
                                     <img class="card-image_populaires" src="images/hebergements/aw-creative.jpg"
                                         alt="Chambres d'hôtes au coeur de l'eau" />
@@ -243,7 +239,7 @@
                                     </div>
                                 </article>
                             </a>
-                            <a href="#">
+                            <a href="#" title="lien-populaire">
                                 <article class="card-populaires">
                                     <img class="card-image_populaires" src="images/hebergements/febrian-zakaria2.jpg"
                                         alt="Hôtel Bleu et Blanc" />
@@ -266,9 +262,7 @@
             </section>
 
             <section class="activites">
-                <h2 id="title-activites">
-                    <title class="activites-title">Activités à Marseille</title>
-                </h2>
+                <h2 id="title-activites" title="activites-title">Activités à Marseille</h2>
 
                 <div class="container-activites">
 
@@ -301,33 +295,30 @@
 
         </main>
 
-        <footer>
-            <footer class="main_footer">
-                <div class="footer">
+        <footer class="main_footer">
+            <div class="footer">
+                <h4 class="title-footer">A propos</h4>
+                <ul class="no-bullets">
+                    <li>Fonctionnnement</li>
+                    <li>Conditions générales</li>
+                    <li>Données de confidentialité</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h4 class="title-footer">Nos hébergements</h4>
+                <ul class="no-bullets">
+                    <li>Charte qualité</li>
+                    <li>Proposer votre hôtel</li>
+                </ul>
+            </div>
 
-                    <h4 class="title-footer">A propos</h4>
-                    <ul class="no-bullets">
-                        <li>Fonctionnnement</li>
-                        <li>Conditions générales</li>
-                        <li>Données de confidentialité</li>
-                    </ul>
-                </div>
-                <div class="footer">
-                    <h4 class="title-footer">Nos hébergements</h4>
-                    <ul class="no-bullets">
-                        <li>Charte qualité</li>
-                        <li>Proposer votre hôtel</li>
-                    </ul>
-                </div>
-
-                <div class="footer">
-                    <h4 class="title-footer">Assistance</h4>
-                    <ul class="no-bullets">
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
-                    </ul>
-                </div>
-            </footer>
+            <div class="footer">
+                <h4 class="title-footer">Assistance</h4>
+                <ul class="no-bullets">
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
