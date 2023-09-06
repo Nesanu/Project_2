@@ -59,7 +59,8 @@ h1 {
 .liens-nav {
     font-size: small;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
     text-align: end;
     margin-top: 15px;
@@ -74,10 +75,12 @@ a[title*="hebergements"]:hover {
     border-right: none;
 }
 
-
 a[title*="activites"]:hover {
     color: #0065fc;
     border-top: 2px solid #0065fc;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 
@@ -99,13 +102,13 @@ form {
 .btn-location {
     border: none;
     border-radius: 10px 0px 0px 10px;
-    padding: 8px;
-    object-fit: cover;
+    padding: 9px;
+
 }
 
 .fa-location-dot {
     color: black;
-    padding: 5px;
+    padding: 6px;
 }
 
 .button-search {
@@ -115,7 +118,7 @@ form {
     border: none;
     background-color: #0065fc;
     border-radius: 0px 10px 10px 0px;
-    padding: 12px;
+    padding: 14px;
 }
 
 .button-magnifying-glass {
@@ -161,9 +164,11 @@ input {
     display: flex;
     flex-direction: row;
     font-size: small;
-    padding: 5px;
+    justify-content: flex-start;
     font-weight: 700;
     font-size: 1.1em;
+    padding-left: 5px;
+    margin-top: 15px;
 }
 
 
@@ -207,7 +212,7 @@ input {
     display: flex;
     flex-direction: row;
     height: auto;
-    padding: 10px 5px 10px 0px;
+    padding: 10px 0px 10px 0px;
     justify-content: flex-start;
     text-align: start;
     gap: 5px;
@@ -223,7 +228,7 @@ input {
     border: 2px solid #f2f2f2;
     border-radius: 50%;
     height: min-content;
-    margin: 10px 0 0 5px;
+    margin: 10px 0 0 0;
 
 }
 
@@ -280,8 +285,8 @@ h2[title*="activites-title"] {
     background-color: #f2f2f2;
     height: 600px;
     width: 33%;
-    gap: 20px;
-    padding: 15px;
+    gap: 15px;
+    padding: 10px 15px 10px 15px;
     border-radius: 15px 15px 15px 15px;
 
 }
@@ -293,6 +298,7 @@ h2[title*="activites-title"] {
     background-color: #f2f2f2;
     width: 100%;
     gap: 20px;
+
 }
 
 .card-populaires {
@@ -354,6 +360,8 @@ h3 {
 .title-hebergements {
     padding-right: 25px;
     font-size: larger;
+    padding-right: 10px;
+
 
 }
 
@@ -362,13 +370,14 @@ h3 {
     width: 65%;
     height: 600px;
     border-radius: 15px 15px 15px 15px;
-    padding: 15px 0px 15px 20px;
+    padding: 10px 15px 10px 25px;
 }
 
 .container-hebergements_cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     border-radius: 15px 15px 15px 15px;
     background-color: #f2f2f2;
@@ -465,14 +474,14 @@ h2[title*="activites-title"] {
     justify-content: start;
     width: 100%;
     margin-top: 50px;
-    line-height: 1.5em;
+    line-height: 18px;
 
 }
 
 .title-footer {
     display: inline-flex;
     flex-wrap: nowrap;
-    line-height: none;
+    line-height: 21px;
 }
 
 .footer {
@@ -491,11 +500,6 @@ ul.no-bullets {
     margin: 0;
 }
 
-
-/*h4 {
-    padding-top: 10px;
-    margin: 0;
-}*/
 
 /* tablette------------------------------------------------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -516,11 +520,11 @@ ul.no-bullets {
     .container-search {
         display: inline-block;
         object-fit: cover;
+        margin-bottom: 10px;
     }
 
     .text-filtres {
         display: none;
-
     }
 
     .btn-filtres {
@@ -530,7 +534,6 @@ ul.no-bullets {
         margin: 7px;
         padding: 10px;
         gap: 5px;
-
     }
 
 
@@ -540,7 +543,7 @@ ul.no-bullets {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
+        margin-bottom: 15px;
 
     }
 
@@ -550,10 +553,10 @@ ul.no-bullets {
         flex-wrap: wrap;
         font-size: 0.9em;
         font-weight: 600;
-        padding: 5px;
+        padding-left: 5px;
+        margin-top: 20px;
+
     }
-
-
 
     .container-hebergements-et-populaires-cards {
         display: flex;
@@ -570,7 +573,8 @@ ul.no-bullets {
         justify-content: space-between;
         background-color: #f2f2f2;
         width: auto;
-        padding: 10px 0 10px 25px;
+        padding: 10px 15px 10px 25px;
+
     }
 
 
@@ -608,6 +612,7 @@ ul.no-bullets {
         width: auto;
         gap: 15px;
         padding: 0 15px 20px 15px;
+        border-radius: 15px 15px 15px 15px;
     }
 
 
@@ -658,7 +663,6 @@ ul.no-bullets {
     }
 
 
-
 }
 
 /* mobile--------------------------------------------------------------------*/
@@ -686,10 +690,45 @@ ul.no-bullets {
 
     .liens-nav {
         display: flex;
-        flex-flow: row wrap;
         justify-content: space-between;
-        margin-bottom: 25px;
+        text-align: center;
+        flex-direction: unset;
+        flex-wrap: nowrap;
         width: 100%;
+        gap: 0;
+    }
+
+
+    nav>a {
+        border: none;
+        width: 45%;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+    }
+
+    /*<a:hover {
+        color: #0065fc;
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+        border-left: none;
+        border-right: none;
+        width: auto;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+
+    }*/
+
+
+    a[title*="activites"]:hover {
+        color: #0065fc;
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+        border-left: none;
+        border-right: none;
+        width: 45%;
+        padding: 15px;
     }
 
     a[title*="hebergements"]:hover {
@@ -698,24 +737,14 @@ ul.no-bullets {
         border-bottom: 2px solid #0065fc;
         border-left: none;
         border-right: none;
-        width: auto;
+        width: 45%;
+        text-align: center;
         padding: 15px;
     }
-
-    a[title*="activites"]:hover {
-        color: #0065fc;
-        border-top: none;
-        border-bottom: 2px solid #0065fc;
-        border-left: none;
-        border-right: none;
-        width: auto;
-        padding: 15px;
-    }
-
 
     h1 {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         flex-wrap: wrap;
     }
 
@@ -739,10 +768,23 @@ ul.no-bullets {
         justify-content: center;
     }
 
+    form {
+        width: 100%;
+
+    }
+
+    form>div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
     .container-search {
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: 95%;
     }
 
     .button-search {
@@ -778,24 +820,26 @@ ul.no-bullets {
         flex-wrap: wrap;
         font-size: 0.9em;
         font-weight: 600;
-        padding-right: unset;
+        padding-left: unset;
+        margin-top: 15px;
     }
 
     .container-filtres {
         display: flex;
         flex-wrap: wrap;
-        min-width: 200px;
-
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
     }
 
     .btn-filtres {
         display: flex;
         justify-content: flex-start;
-        width: 40%;
-        height: auto;
-        gap: 20px;
+        flex-wrap: nowrap;
+        width: 45%;
+        gap: 10px;
     }
-
 
     .container-hebergements-et-populaires-cards {
         display: flex;
@@ -809,17 +853,17 @@ ul.no-bullets {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px;
+        gap: 5px;
         padding-left: 15px;
     }
 
     .container-populaires_cards {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         width: auto;
         height: 100%;
-        gap: 20px;
+        gap: 0;
         border-radius: unset;
 
     }
@@ -831,8 +875,6 @@ ul.no-bullets {
         width: auto;
         gap: 20px;
         padding: 10px;
-
-
     }
 
     .card-populaires {
@@ -889,6 +931,8 @@ ul.no-bullets {
         background-color: white;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
         height: 80%;
         width: auto;
         object-fit: cover;
@@ -920,13 +964,15 @@ ul.no-bullets {
     h2[title*="activites-title"] {
         width: 80%;
         padding-left: 20px;
+        margin: 0;
     }
 
     .container-activites {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         width: auto;
         height: 80%;
         padding: 20px;
@@ -959,6 +1005,7 @@ ul.no-bullets {
         flex-wrap: wrap;
         width: auto;
         justify-content: space-between;
+        padding: 10px;
     }
 
     .footer {
