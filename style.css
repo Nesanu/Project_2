@@ -147,22 +147,21 @@ input {
 
 .container-filtres {
     display: flex;
-    font-size: small;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     cursor: auto;
-    justify-content: flex-start;
+    font-size: small;
     align-items: center;
-    gap: 20px;
     margin-top: 10px;
 }
 
 
 .text-filtres {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     font-size: small;
-    padding-right: 10px;
+    padding: 5px;
     font-weight: 700;
     font-size: 1.1em;
 }
@@ -417,9 +416,13 @@ h3 {
     text-align: left;
 }
 
-.title-activites {
-    padding: 30px 0px 0px 20px;
+
+
+h2[title*="activites-title"] {
     display: flex;
+    padding: 40px 0px 0px 15px;
+    margin-top: 30px;
+
 }
 
 .container-activites {
@@ -461,7 +464,15 @@ h3 {
     background-color: #f2f2f2;
     justify-content: start;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
+    line-height: 1.5em;
+
+}
+
+.title-footer {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    line-height: none;
 }
 
 .footer {
@@ -471,6 +482,7 @@ h3 {
     width: 33.33%;
     padding-bottom: 10px;
     background-color: #f2f2f2;
+
 }
 
 ul.no-bullets {
@@ -480,10 +492,10 @@ ul.no-bullets {
 }
 
 
-h4 {
+/*h4 {
     padding-top: 10px;
     margin: 0;
-}
+}*/
 
 /* tablette------------------------------------------------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -501,11 +513,36 @@ h4 {
 
     }
 
+    .container-search {
+        display: inline-block;
+        object-fit: cover;
+    }
+
     .text-filtres {
         display: none;
 
     }
 
+    .btn-filtres {
+        display: flex;
+        padding: 10px;
+        font-weight: 600;
+        margin: 7px;
+        padding: 10px;
+        gap: 5px;
+
+    }
+
+
+    .container-filtres {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+    }
 
     .text-filtres-responsive {
         display: flex;
@@ -513,13 +550,10 @@ h4 {
         flex-wrap: wrap;
         font-size: 0.9em;
         font-weight: 600;
-        padding-right: unset;
+        padding: 5px;
     }
 
-    .container-search {
-        display: inline-block;
-        object-fit: cover;
-    }
+
 
     .container-hebergements-et-populaires-cards {
         display: flex;
@@ -611,6 +645,13 @@ h4 {
         gap: 10px;
     }
 
+    h2[title*="activites-title"] {
+        display: flex;
+        padding: 20px 0px 0px 15px;
+        margin-top: 30px;
+
+    }
+
     .gallery img {
         width: 100%;
         height: 80%;
@@ -648,6 +689,7 @@ h4 {
         flex-flow: row wrap;
         justify-content: space-between;
         margin-bottom: 25px;
+        width: 100%;
     }
 
     a[title*="hebergements"]:hover {
@@ -656,7 +698,8 @@ h4 {
         border-bottom: 2px solid #0065fc;
         border-left: none;
         border-right: none;
-        padding: 0 15px 0 15px;
+        width: auto;
+        padding: 15px;
     }
 
     a[title*="activites"]:hover {
@@ -665,7 +708,8 @@ h4 {
         border-bottom: 2px solid #0065fc;
         border-left: none;
         border-right: none;
-        padding: 0 15px 0 15px;
+        width: auto;
+        padding: 15px;
     }
 
 
@@ -697,7 +741,8 @@ h4 {
 
     .container-search {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        width: 70%;
     }
 
     .button-search {
@@ -729,6 +774,7 @@ h4 {
     .text-filtres-responsive {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
         flex-wrap: wrap;
         font-size: 0.9em;
         font-weight: 600;
@@ -874,7 +920,6 @@ h4 {
     h2[title*="activites-title"] {
         width: 80%;
         padding-left: 20px;
-        margin-top: 20px;
     }
 
     .container-activites {
@@ -921,6 +966,7 @@ h4 {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        width: auto;
     }
 
     .title-footer {
